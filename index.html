@@ -141,15 +141,15 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
-            </div> -->
+                  </a> -->
+            </div>
           </div>
         </div>
       </div>
@@ -272,7 +272,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -282,7 +282,7 @@
           </video>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -332,7 +332,7 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <!-- <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
         <!-- <h3 class="title is-4">Interpolating states</h3>
@@ -369,7 +369,7 @@
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Reconstruction of Carla Town10HD with simulator integration</h3>
+        <h3 class="title is-4">Reconstruction of Carla Town10HD with simulator integration</h3>
         <div class="content has-text-justified">
           <p>
             Recreating Carla Town10HD worked as a development environment to make a proof-of-concept for integrating gaussian rendering with vehicle dynamics from Carla.
@@ -385,7 +385,43 @@
             <source src="./static/videos/town10hd.mp4"
                     type="video/mp4">
           </video>
-        </div> -->
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            We can also run the integration with rendering turned off in Carla to increase performance in SIBR-viewer.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/town10hd_no_rendering.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <h3 class="title is-4">Reconstruction of Trip090 - Real-world data</h3>
+        <div class="content has-text-justified">
+          <p>
+            This video showcases a reconstruction of Trip090, with a custom Carla map created from OpenStreetMap data and aligned through geo-referencing with our gaussian model.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/trip090.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
         <!--/ Re-rendering. -->
 
       </div>
