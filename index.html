@@ -71,6 +71,32 @@
   </div>
 </section>
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/trip090_integration.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">From Roadside To Simulator</span> aligns custom maps in Carla with gaussian models to augment the Carla sim with photorealistic gaussian rendering.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Video</h2>
+    <div class="publication-video">
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/trip090_integration.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -108,20 +134,33 @@
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/trip090_integration.mp4"
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item town10">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/town10_norm.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item carla">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/trip090_carla_norm.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item sibr">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/trip090_sibr_norm.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -138,7 +177,7 @@
 
 
         <!-- Videos. -->
-        <h2 class="title is-4">Real-World Data</h2>
+        <h2 class="title is-3">Real-World Data</h2>
 
 
         <h3 class="title is-4">SIBR-Carla integration for Trip090</h3>
@@ -214,8 +253,7 @@
           </video>
         </div>
 
-
-        <h2 class="title is-4">Synthetic Data</h2>
+        <h2 class="title is-3">Synthetic Data</h2>
 
         <h3 class="title is-4">SIBR-Carla integration of Carla Town10HD</h3>
         <div class="content has-text-justified">
@@ -336,12 +374,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Thanks to the authors of <a
+            Thank you to the authors of <a
               href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for open-sourcing this website template.
           </p>
         </div>
