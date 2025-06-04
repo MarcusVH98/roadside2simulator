@@ -96,27 +96,10 @@
             (Coming Soon)
           </p>
           <p>
-            <!-- Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness. -->
+
           </p>
           <p>
-            <!-- We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity. -->
+
           </p>
         </div>
       </div>
@@ -125,36 +108,6 @@
   </div>
 </section>
 
-
-
-
-<!-- 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/town10_norm.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/trip090_carla_norm.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/trip090_sibr_norm.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -190,7 +143,6 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
 
-        <!-- Videos. -->
         <h2 class="title is-3 has-text-centered">Real-World Data</h2>
 
 
@@ -215,7 +167,7 @@
         <h3 class="title is-4">SIBR-Carla integration for Trip094</h3>
         <div class="content has-text-justified">
           <p>
-            Showcasing Trip094, showing how we clip through the ground at the end, due to missing height projection in Roadrunner map.
+            Showcasing the same integration for Trip094.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -252,7 +204,7 @@
         <h3 class="title is-4">Reconstruction of Trip094</h3>
         <div class="content has-text-justified">
           <p>
-            Showcasing reconstruction quality on Trip094.
+            Showcasing reconstruction quality on Trip094. Evaluation metrics in the paper were derived from single-chunk evaluation, while this video is of the fully trained model. The chunk pruning of Hierarchical 3DGS, which happens for areas with fewer inputs images, is leading to degraded quality and many low-detail areas.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -272,7 +224,7 @@
         <h3 class="title is-4">SIBR-Carla integration of Carla Town10HD</h3>
         <div class="content has-text-justified">
           <p>
-            Recreating Carla Town10HD worked as a development environment to make a proof-of-concept for integrating gaussian rendering with vehicle dynamics from Carla.
+            Reconstructing Carla Town10HD was an excellent way to develop the method, by having full control over the environment to reconstruct we could easily generate input data, compare with ground truth and test out methodologies before moving to real-world data.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -322,54 +274,9 @@
           </video>
         </div>
 
-        <!--/ Re-rendering. -->
-
       </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
-
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section> -->
 
 
 <footer class="footer">
