@@ -26,48 +26,10 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
+<!-- -->
+
 <body>
-
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
 
 <section class="hero">
   <div class="hero-body">
@@ -112,16 +74,15 @@
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            (Coming Soon)
           </p>
           <p>
-            Our approach augments neural radiance fields
+            <!-- Our approach augments neural radiance fields
             (NeRF) by optimizing an
             additional continuous volumetric deformation field that warps each observed point into a
             canonical 5D NeRF.
@@ -130,10 +91,10 @@
             more robust optimization.
             By adapting principles from geometry processing and physical simulation to NeRF-like
             models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            improves robustness. -->
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
+            <!-- We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
             photos/videos into deformable NeRF
             models that allow for photorealistic renderings of the subject from arbitrary
             viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
@@ -141,25 +102,25 @@
             rig with two mobile phones that take time-synchronized photos, yielding train/validation
             images of the same pose at different viewpoints. We show that our method faithfully
             reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            fidelity. -->
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/trip090.mp4"
+            <source src="./static/videos/trip090_integration.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Paper video. -->
   </div>
 </section>
@@ -167,7 +128,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
 
 
@@ -178,7 +138,86 @@
 
 
         <!-- Videos. -->
-        <h3 class="title is-4">Reconstruction of Carla Town10HD with simulator integration</h3>
+        <h2 class="title is-4">Real-World Data</h2>
+
+
+        <h3 class="title is-4">SIBR-Carla integration for Trip090</h3>
+        <div class="content has-text-justified">
+          <p>
+            This video showcases a reconstruction of Trip090, with a custom Carla map created from OpenStreetMap data and aligned through geo-referencing with our gaussian model.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/trip090_integration.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <h3 class="title is-4">SIBR-Carla integration for Trip094</h3>
+        <div class="content has-text-justified">
+          <p>
+            Showcasing Trip094, showing how we clip through the ground at the end, due to missing height projection in Roadrunner map.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/trip094_integration.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <h3 class="title is-4">Reconstruction of Trip090</h3>
+        <div class="content has-text-justified">
+          <p>
+            Showcasing reconstruction quality on Trip090.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/trip090_sibr.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+
+        <h3 class="title is-4">Reconstruction of Trip094</h3>
+        <div class="content has-text-justified">
+          <p>
+            Showcasing reconstruction quality on Trip094.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/trip094_sibr.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+
+        <h2 class="title is-4">Synthetic Data</h2>
+
+        <h3 class="title is-4">SIBR-Carla integration of Carla Town10HD</h3>
         <div class="content has-text-justified">
           <p>
             Recreating Carla Town10HD worked as a development environment to make a proof-of-concept for integrating gaussian rendering with vehicle dynamics from Carla.
@@ -209,42 +248,6 @@
                  playsinline
                  width="75%">
             <source src="./static/videos/town10hd_no_rendering.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">Reconstruction of Trip090 - Real-world data</h3>
-        <div class="content has-text-justified">
-          <p>
-            This video showcases a reconstruction of Trip090, with a custom Carla map created from OpenStreetMap data and aligned through geo-referencing with our gaussian model.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/trip090.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">Reconstruction of Trip094 - Real-world data</h3>
-        <div class="content has-text-justified">
-          <p>
-            Showcasing Trip094, showing how we clip through the ground at the end, due to missing height projection in Roadrunner map.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/trip094.mp4"
                     type="video/mp4">
           </video>
         </div>
