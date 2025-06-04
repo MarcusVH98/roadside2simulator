@@ -85,18 +85,6 @@
   </div>
 </section>
 
-<div class="columns is-centered has-text-centered">
-  <div class="column is-four-fifths">
-    <h2 class="title is-3">Video</h2>
-    <div class="publication-video">
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/trip090_integration.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-</div>
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -137,23 +125,27 @@
   </div>
 </section>
 
+
+
+
+<!-- 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item town10">
+        <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/town10_norm.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item carla">
+        <div class="item">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/trip090_carla_norm.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item sibr">
+        <div class="item">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/trip090_sibr_norm.mp4"
                     type="video/mp4">
@@ -162,22 +154,44 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 is-centered">Comparison - Hand-crafted vs Procedural vs Gaussian Reconstruction</h2>
+      </div>
+    </div>
+  </div>
 </section>
+
+<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 30%;">
+    <video src="./static/videos/town10_norm.mp4" controls muted autoplay loop style="width: 100%; height: auto;"></video>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Hand-crafted Carla Town10HD</p>
+  </div>
+
+  <div style="text-align: center; max-width: 30%;">
+    <video src="./static/videos/trip090_carla_norm.mp4" controls muted autoplay loop style="width: 100%; height: auto;"></video>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Procedural Generation of Trip090</p>
+  </div>
+
+  <div style="text-align: center; max-width: 30%;">
+    <video src="./static/videos/trip090_sibr_norm.mp4" controls muted autoplay loop style="width: 100%; height: auto;"></video>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Gaussian Reconstruction of Trip090</p>
+  </div>
+</div>
+
 
 
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
       <div class="column is-full-width">
-        <!-- <h2 class="title is-3">Animation</h2> -->
-
 
         <!-- Videos. -->
-        <h2 class="title is-3">Real-World Data</h2>
+        <h2 class="title is-3 is-centered">Real-World Data</h2>
 
 
         <h3 class="title is-4">SIBR-Carla integration for Trip090</h3>
@@ -253,7 +267,7 @@
           </video>
         </div>
 
-        <h2 class="title is-3">Synthetic Data</h2>
+        <h2 class="title is-3 is-centered">Synthetic Data</h2>
 
         <h3 class="title is-4">SIBR-Carla integration of Carla Town10HD</h3>
         <div class="content has-text-justified">
@@ -311,7 +325,6 @@
         <!--/ Re-rendering. -->
 
       </div>
-    </div>
     <!--/ Animation. -->
 
 
